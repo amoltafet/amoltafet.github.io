@@ -3,6 +3,7 @@ import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Skeleton from "react-loading-skeleton";
 import axios from "axios";
+import { Image } from "react-bootstrap";
 
 const ProjectCard = ({ value }) => {
   const {
@@ -13,6 +14,8 @@ const ProjectCard = ({ value }) => {
     languages_url,
     pushed_at,
   } = value;
+
+  const images_url = 'https://raw.githubusercontent.com/amoltafet/'+ name + "/main/default.png";
   return (
     <Col md={6}>
       <Card className="card shadow-lg p-3 mb-5 bg-white rounded">
@@ -42,12 +45,17 @@ const CardButtons = ({ svn_url }) => {
     <>
       <a
         href={`${svn_url}/archive/master.zip`}
-        className="btn btn-outline-secondary mr-3"
+        className="btn btn-outline-success mr-3"
       >
         <i className="fab fa-github" /> Clone Project
       </a>
-      <a href={svn_url} target=" _blank" className="btn btn-outline-secondary">
+      <a href={svn_url} target=" _blank" className="btn btn-outline-warning">
         <i className="fab fa-github" /> Repo
+      </a>
+      <a href={`${svn_url}/`}
+        className="btn btn-outline-default ml-3"
+      >
+        <Image src={require("../../assets/img/eye-outline.png")} width="20px"/>  Live Demo
       </a>
     </>
   );
