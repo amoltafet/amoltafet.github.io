@@ -44,7 +44,7 @@ const about = {
   imageSize: 375,
   profilePictureLink: require("../editable-stuff/ahmad.jpeg"),
   message:
-    "My name is Ahmad Moltafet. I’m currently a senior at Gonzaga University pursuing a B.S. in Computer Science. I'm most passionate about giving back to the community, and my goal is to pursue this passion within the field of software engineering. In my free time I like working on open source projects and working out.",
+    "My name is Ahmad Moltafet. I’m currently a senior at Gonzaga University pursuing a B.S. in Computer Science. I'm most passionate about giving back to the community, and my goal is to pursue this passion within the field of software engineering. In my free time I like working and designing open source projects.",
   resume: require("../editable-stuff/resume.pdf"),
 };
 
