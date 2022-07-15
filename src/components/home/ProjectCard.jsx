@@ -22,7 +22,7 @@ const ProjectCard = ({ value }) => {
         <Card.Body>
           <Card.Title as="h5">{name || <Skeleton />} </Card.Title>
           <Card.Text>{(!description)?"":description || <Skeleton count={3} />} </Card.Text>
-          {svn_url ? <CardButtons svn_url={svn_url} /> : <Skeleton count={2} />}
+          {svn_url ? <CardButtons svn_url={svn_url}  name={name}/> : <Skeleton count={2} />}
           <hr />
           {languages_url ? (
             <Language languages_url={languages_url} repo_url={svn_url} />
@@ -40,7 +40,7 @@ const ProjectCard = ({ value }) => {
   );
 };
 
-const CardButtons = ({ svn_url }) => {
+const CardButtons = ({ svn_url, name }) => {
   return (
     <>
       <a
