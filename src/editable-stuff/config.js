@@ -126,7 +126,7 @@ const experiences = {
     {
       role: 'Software Engineer Intern',
       companylogo: require('../assets/img/intellitect.jpeg'),
-      date: 'June 2022 – Present',
+      date: 'February 2022 – Present',
     },
     {
       role: 'Real Estate Agent',
