@@ -52,7 +52,7 @@ const CardButtons = ({ svn_url }) => {
       <a href={svn_url} target=" _blank" className="btn btn-outline-warning">
         <i className="fab fa-github" /> Repo
       </a>
-      <a href={`${svn_url}/`}
+      <a href={`${svn_url}/${name}`} target="_blank" 
         className="btn btn-outline-default ml-3"
       >
         <Image src={require("../../assets/img/eye-outline.png")} width="20px"/>  Live Demo
