@@ -47,15 +47,15 @@ const CardButtons = ({ svn_url, name }) => {
         href={`${svn_url}/archive/master.zip`}
         className="btn btn-outline-success mr-3"
       >
-        <i className="fab fa-github" /> Clone Project
+        <i className="fa fa-download" /> Clone Project
       </a>
-      <a href={svn_url} target=" _blank" className="btn btn-outline-warning">
+      <a href={svn_url} target=" _blank" className="btn btn-outline-warning mr-3">
         <i className="fab fa-github" /> Repo
       </a>
       <a href={`https://amoltafet.github.io/${name}`} target="_blank" 
-        className="btn btn-outline-default ml-3"
+        className="btn btn-outline-dark"
       >
-        <Image src={require("../../assets/img/eye-outline.png")} width="20px"/>  Live Demo
+        <i className="fa fa-eye" />  Live Demo
       </a>
     </>
   );
