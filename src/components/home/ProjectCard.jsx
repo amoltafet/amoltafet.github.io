@@ -3,7 +3,6 @@ import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Skeleton from "react-loading-skeleton";
 import axios from "axios";
-import { Image } from "react-bootstrap";
 
 const ProjectCard = ({ value }) => {
   const {
