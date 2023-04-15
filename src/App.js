@@ -1,25 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from 'react';
+import Main from './sections/Main.js';
+import Custom404 from './Custom404.js';
+import Work from './sections/Work.js';
+import Projects from './sections/Projects.js';
+import Skills from './sections/Skills.js';
+import Research from './sections/Research.js';
+import CssBaseline from '@mui/material/CssBaseline';
+import Education from './sections/Education.js';
 
 function App() {
+  const [componentToShow, setComponentToShow] = useState(<Main />);
+
+  useEffect(() => {
+    console.log(window.location.hash);
+    switch (window.location.hash) {
+      case '#work':
+        setComponentToShow(<Work />);
+        break;
+      case '#projects':
+        setComponentToShow(<Projects />);
+        break;
+      case '#skills':
+        setComponentToShow(<Skills />);
+        break;
+      case '#research':
+        setComponentToShow(<Research />);
+        break;
+      case '#education':
+        setComponentToShow(<Education />);
+        break;
+      default:
+        setComponentToShow(<Main />);
+    }
+    //  reload the page when the hash changes
+    window.addEventListener('hashchange', () => {
+      window.location.reload();
+    }
+    );
+  }, [window.location.hash]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <CssBaseline />
+      {componentToShow}
     </div>
   );
 }
+
 
 export default App;
