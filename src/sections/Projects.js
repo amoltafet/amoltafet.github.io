@@ -15,6 +15,7 @@ import { CardOverflow } from "@mui/joy";
 import Button from '@mui/joy/Button';
 import Grid from '@mui/material/Grid';
 import LanguageIcon from '@mui/icons-material/Language';
+import Skills from "./Skills";
 
 export default function Projects() {
 
@@ -22,7 +23,7 @@ export default function Projects() {
         {
             title: "IntelliTerminal",
             description: "IntelliTerminal is an extension to Intellitect.com that adds a game for new hires. Please visit console.intellitect.com",
-            image: "https://images.unsplash.com/photo-1515825838458-f2a94b20105a?auto=format&fit=crop&w=300",
+            image: "terminal.png",
             link: "https://console.intellitect.com",
             lastUpdated: "2022-10-02",
             repo: "https://github.com/amoltafet/IntellitectTerminal",
@@ -31,7 +32,7 @@ export default function Projects() {
         {
             title: "Oval Real Estate",
             description: "Oval is a real estate dashboard that allows users to view and manage their properties. This project was built with React, Node, and MongoDB.",
-            image: "https://images.unsplash.com/photo-1515825838458-f2a94b20105a?auto=format&fit=crop&w=300",
+            image: "oval.png",
             link: "https://amoltafet.github.io/Oval/",
             lastUpdated: "2021-10-01",
             repo: "https://github.com/amoltafet/Oval",
@@ -40,7 +41,7 @@ export default function Projects() {
         {
             title: "Investment Club Website",
             description: "This project was more focused on the animations rather than the functionality. It was built with React and Framer Motion.",
-            image: "https://images.unsplash.com/photo-1515825838458-f2a94b20105a?auto=format&fit=crop&w=300",
+            image: "investment.png",
             link: "https://amoltafet.github.io/guic/",
             lastUpdated: "2021-10-01",
             repo: "https://github.com/amoltafet/guic",
@@ -49,7 +50,7 @@ export default function Projects() {
         {
             title: "Rock Water",
             description: "My own programming language with the following capabilities: Module System, Lexer, AST Parser, Prettify, Call Expressions.",
-            image: "https://images.unsplash.com/photo-1515825838458-f2a94b20105a?auto=format&fit=crop&w=300",
+            image: "rock.jpeg",
             link: "https://amoltafet.github.io/RockWater/", 
             lastUpdated: "2021-10-01",
             repo: "https://github.com/amoltafet/RockWater",
@@ -60,7 +61,11 @@ export default function Projects() {
     return (
         <div>
             <Header title="Projects"/>
-            
+            <Grid item xs={12} sm={12} md={12} lg={12} id="skills">
+                   
+                    <Divider />
+                    <Skills />
+                </Grid>
             <MainProject />
             <Grid container
                 spacing={2}
@@ -81,11 +86,7 @@ export default function Projects() {
                     </Grid> 
                 ))}
 
-                <Grid item xs={12} sm={12} md={12} lg={12} id="skills">
-                    <Typography variant="h6" color="primary">
-                       Skills / Languages
-                    </Typography>
-                </Grid>
+              
              </Grid>    
 
         </div>
@@ -100,7 +101,7 @@ function ProjectCard({value}) {
         link,
         repo,
         languages,
-        lastUpdated,
+        image,
       } = value;
 
     return (
@@ -108,9 +109,8 @@ function ProjectCard({value}) {
             <CardOverflow>
                 <AspectRatio ratio="2">
                     <img
-                        src="https://images.unsplash.com/photo-1532614338840-ab30cf10ed36?auto=format&fit=crop&w=318"
-                        srcSet="https://images.unsplash.com/photo-1532614338840-ab30cf10ed36?auto=format&fit=crop&w=318&dpr=2 2x"
-                        loading="lazy"
+                        src={image}
+                        srcSet={require(`../img/${image}`)}
                         alt=""
                         />
                 </AspectRatio>
