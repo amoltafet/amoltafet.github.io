@@ -15,6 +15,7 @@ import Link from '@mui/joy/Link';
 import Favorite from '@mui/icons-material/Favorite';
 import PublicIcon from '@mui/icons-material/Public';
 import CreateNewFolder from '@mui/icons-material/CreateNewFolder';
+import CardMedia from '@mui/material/CardMedia';
 
 export default function Main() {
   return (
@@ -31,15 +32,23 @@ export default function Main() {
         }}>
             <Grid item xs={12} sm={6}>
                 <MainCard />
-               
             </Grid>
+            
             <Grid item xs={12} sm={6} sx={{
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'center',
                 alignItems: 'center',
-            }}>
-                <Typography variant="h1" color="primary">
+            }}>  
+            
+            <CardMedia
+            component="img"
+            sx={{ width: 151 }}
+            image={require('../img/ahmad.jpeg')}
+            alt="Live from space  cover"
+        />
+               
+                <Typography variant="h3" color="primary">
                     Ahmad Moltafet
                 </Typography>
                 <Socials />

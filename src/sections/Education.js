@@ -16,36 +16,18 @@ export default function Education() {
                 </Typography>
             
                 <Typography variant="h5" color="black">
-                    Seattle University 
+                    University of Washington | Bothell
                 </Typography>
 
                 <Typography variant="h6" color="black">
-                    <b>Master of Business Administration</b>
+                    <b>Master of Computer Science and Software Engineering</b>
                 </Typography>
                 <Typography variant="overline" color="black">
-                    September 2023 - June 2024 <br />
+                    September 2023 - June 2025 <br />
                 </Typography>
                
                
-                <Divider sx={{marginTop: "1%"}}/>
-                <Grid container>
-                    <Grid item xs={12} sm={6}>
-                        <Typography variant="overline" color="black">
-                        Relevant Corsework
-                        </Typography>
-                        <Typography variant="body2" color="black">
-                        This research proposes a new set of design principles for AI chatbots that prioritize human-centered design and ethical considerations. The study highlights existing and new design principles will lead to an improved user experience, engagement, satisfaction, and success of users while interacting with an AI chatbot. The proposed design principles aim to assist developers in creating chatbots that are more user-friendly and transparent, with an ethical and empathetic approach towards their users. The research proposes that AI platforms utilizing these principles will result in more efficient and effective communication between chatbots and users.
-                        </Typography>
-                    </Grid>
-                    <Grid item xs={12} sm={6} sx={{textAlign: "center"}}>
-                        <Typography variant="overline" color="black">
-                        Research Experience
-                        </Typography>
-                        <Typography variant="body2" color="black">
-                            None to date
-                        </Typography>
-                    </Grid>
-                </Grid>
+              
             </div>
             <div style={{
                 textAlign: 'left',

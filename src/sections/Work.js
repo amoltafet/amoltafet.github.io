@@ -7,15 +7,6 @@ import Button from '@mui/joy/Button';
 export default function Work() {
     const data = [
         {
-            image: "https://media.licdn.com/dms/image/C4D0BAQGG2t3XtiqM7Q/company-logo_100_100/0/1519922046284?e=2147483647&v=beta&t=YZsaM1bv5sEhvwVlnT9Ww0U1zid8qVd8yuZWHGWz7Ig",
-            title: "Software Engineer Intern",
-            company: "IntelliTect",
-            date: "Feb 2022 - Present [ 1 year 3 months ]",
-            description: "I deployed and managed Docker on Azure for 80% speed increase on Intellitect.com. I migrated servers to Azure/AWS and researched server configurations. I launched a cloud-based terminal with React, C#, and mySQL, boosting recruiting efficiency. My contributions have been vital to the company's success.",
-            location: "Spokane, Washington, United States",
-            link: "https://www.linkedin.com/company/intellitect?trk=public_profile_experience-item_profile-section-card_subtitle-click"
-        },
-        {
             image: "https://media.licdn.com/dms/image/C4E0BAQEVZGXmk4fivg/company-logo_100_100/0/1519856250505?e=2147483647&v=beta&t=0TXFEmof3ISvKsSPf7g7WHiFpUYmMKxPZQ9vuO6q6ak",
             title: "CS Research Assistant",
             company: "Gonzaga University",
@@ -23,6 +14,15 @@ export default function Work() {
             description: "My responsibilities include conducting literature reviews and summarizing relevant research findings, collecting and analyzing research data, collaborating with researchers to design and implement research studies, and contributing to the development and writing of research papers, reports, and grant proposals.",
             location: "Spokane, Washington, United States",
             link: "https://www.linkedin.com/company/gonzaga-university?trk=public_profile_experience-item_profile-section-card_subtitle-click"
+        },
+        {
+            image: "https://media.licdn.com/dms/image/C4D0BAQGG2t3XtiqM7Q/company-logo_100_100/0/1519922046284?e=2147483647&v=beta&t=YZsaM1bv5sEhvwVlnT9Ww0U1zid8qVd8yuZWHGWz7Ig",
+            title: "Software Engineer Intern",
+            company: "IntelliTect",
+            date: "Feb 2022 - April 2023 [ 1 year 3 months ]",
+            description: "I deployed and managed Docker on Azure for 80% speed increase on Intellitect.com. I migrated servers to Azure/AWS and researched server configurations. I launched a cloud-based terminal with React, C#, and mySQL, boosting recruiting efficiency. My contributions have been vital to the company's success.",
+            location: "Spokane, Washington, United States",
+            link: "https://www.linkedin.com/company/intellitect?trk=public_profile_experience-item_profile-section-card_subtitle-click"
         },
         {
             image: "https://media.licdn.com/dms/image/C4E0BAQEVZGXmk4fivg/company-logo_100_100/0/1519856250505?e=2147483647&v=beta&t=0TXFEmof3ISvKsSPf7g7WHiFpUYmMKxPZQ9vuO6q6ak",
