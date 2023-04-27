@@ -4,18 +4,8 @@ import { Typography } from '@mui/material';
 import * as React from 'react';
 import Grid from '@mui/material/Grid';
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
-import AspectRatio from '@mui/joy/AspectRatio';
 import Avatar from '@mui/joy/Avatar';
-import Box from '@mui/joy/Box';
-import Card from '@mui/joy/Card';
-import CardCover from '@mui/joy/CardCover';
-import Chip from '@mui/joy/Chip';
-import IconButton from '@mui/joy/IconButton';
-import Link from '@mui/joy/Link';
-import Favorite from '@mui/icons-material/Favorite';
-import PublicIcon from '@mui/icons-material/Public';
-import CreateNewFolder from '@mui/icons-material/CreateNewFolder';
-import CardMedia from '@mui/material/CardMedia';
+
 
 export default function Main() {
   return (
@@ -33,26 +23,27 @@ export default function Main() {
             <Grid item xs={12} sm={6}>
                 <MainCard />
             </Grid>
+
             
             <Grid item xs={12} sm={6} sx={{
                 display: 'flex',
-                flexDirection: 'column',
+                flexDirection: 'row',
                 justifyContent: 'center',
                 alignItems: 'center',
             }}>  
             
-            <CardMedia
-            component="img"
-            sx={{ width: 151 }}
-            image={require('../img/ahmad.jpeg')}
-            alt="Live from space  cover"
+            <Avatar
+            sx={{ width: 150, height: 150, marginRight: '5%' }}
+            src="https://media.licdn.com/dms/image/D5603AQEY5P_-3hAe5g/profile-displayphoto-shrink_800_800/0/1682223262966?e=1687996800&v=beta&t=-kbYntj8QfHVOeWS16OcHkepGUhzaQ5qGNbUZ99Hf9A"
+            alt="Ahmad Moltafet"
         />
-               
+  
+               <div>
                 <Typography variant="h3" color="primary">
                     Ahmad Moltafet
                 </Typography>
                 <Socials />
-              
+              </div>
 
             </Grid>
 

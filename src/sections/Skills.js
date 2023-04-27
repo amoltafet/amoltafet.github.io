@@ -1,7 +1,5 @@
-
 import React from 'react';
-import Header from '../components/Header.js';
-import { Grid, Typography, Box } from '@mui/material';
+import { Typography, Box } from '@mui/material';
 import Chip from '@mui/joy/Chip';
 
 export default function Skills() {
