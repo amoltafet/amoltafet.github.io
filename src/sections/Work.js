@@ -7,23 +7,21 @@ import Button from "@mui/joy/Button";
 export default function Work() {
   const data = [
     {
-      image:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/University_of_Washington_Block_W_logo_RGB_brand_colors.SVG/1200px-University_of_Washington_Block_W_logo_RGB_brand_colors.SVG.png",
-      title: "Computer Science Research Assistant",
-      company: "University of Washington | Data Analysis & Intelligent Systems Research",
-      date: "Feb 2023 - Present ",
-      description:
-        "Conducting research in the field of Artificial Intelligence for Smart Health and Next Generation Biomedicine, contributing to the development of innovative AI-based solutions to improve patient outcomes and advance the field of biomedicine.  Researching both qualitative and quantitative data, analyzing large datasets using statistical and machine learning techniques to derive insights and inform decision-making processes related to healthcare and biomedicine. ",
-      location: "Bothell, Washington, United States",
-      link: "https://sites.google.com/uw.edu/dais-uw",
+      image: "https://upload.wikimedia.org/wikipedia/commons/0/0a/Expedia_Group_logo.svg",
+      title: "Software Development Engineer I",
+      company: "Expedia Group",
+      date: "2023 - Present",
+      description: "Enhancing traveler experience through recommendations using personalized and complementary products, resulting in increased member savings and higher EG trip bookings. Utilizing a tech stack comprising Kotlin, React JS, Typescript, and GraphQL to develop context-aware trip recommendations, ensuring relevance throughout the traveler's journey.",
+      location: "Seattle, Washington, United States",
+      link: "https://expedia.com",
     },
     {
       image:
         "https://media.licdn.com/dms/image/C4E0BAQEVZGXmk4fivg/company-logo_100_100/0/1519856250505?e=2147483647&v=beta&t=0TXFEmof3ISvKsSPf7g7WHiFpUYmMKxPZQ9vuO6q6ak",
-      title: "Computer Science Research Assistant",
+      title: "Undergraduate Research Assistant",
       company: "Gonzaga University",
       date: "Feb 2023 - May 2023 [ 3 months ]",
-      description: "Researched and proposed design principles for AI chatbots that prioritize human-centered design and ethical considerations using design tools such as Figma, with the aim of improving user experience and engagement. Contributed to a study emphasizing the importance of ethical and empathetic approaches in the design of AI chatbots to improve communication and interaction with users. ",
+      description: "Researched and proposed design principles for AI chatbots that prioritize human-centered design and ethical considerations using Figma, with the aim of improving user experience and engagement. Contributed to a study emphasizing the importance of ethical and empathetic approaches in the design of AI chatbots to improve communication and interaction with users. ",
       location: "Spokane, Washington, United States",
       link: "https://www.linkedin.com/company/gonzaga-university?trk=public_profile_experience-item_profile-section-card_subtitle-click",
     },
@@ -119,7 +117,6 @@ export default function Work() {
                   </Typography>
                 </Grid>
               </Grid>
-              <Divider sx={{ marginTop: "10px" }} />
             </>
           ))}
         </Grid>

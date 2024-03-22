@@ -19,10 +19,6 @@ export default function Header({ title }) {
       }}
     >
       <Grid item xs={9}>
-        <Button onClick={backBtn} variant="outlined" sx={{ color: "black", marginBottom: "1%" }}>
-         Go Back
-        </Button>
-    
         <Typography variant="h3" color="black">
           {title}
         </Typography>

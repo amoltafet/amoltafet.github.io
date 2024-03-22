@@ -18,24 +18,29 @@ export default function Education() {
         <Grid item sx={{
           marginTop: "1%",
         }}>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgT3J06oQWDSTEDhIhO4K5x11egkMmCLm636_x3583_MNyd2YPuvSkAYzucS6pWMs4er4&usqp=CAU" width="100px" />
+          <img src="https://www.usg.edu/assets/global/images/inst_logos/inst_gatech.svg" width="100px" />
         </Grid>
         <Grid item sx={{ 
           marginLeft: "2%",
         }}>
           <Typography variant="overline" color="black">
-            Incoming
+            PENDING
           </Typography>
 
           <Typography variant="h5" color="black">
-            University of Washington | Bothell
+            Georgia Institute of Technology
           </Typography>
 
           <Typography variant="h6" color="black">
-            <b>Master of Computer Science and Software Engineering</b>
+            <b>Master of Computer Science</b> | OMSCS
           </Typography>
+
+          <Typography variant="p3" color="black">
+            <b>Concentration in Machine Learning</b> <br />
+          </Typography>
+
           <Typography variant="overline" color="black">
-            September 2023 - June 2025 <br />
+             2023 - Present <br />
           </Typography>
           </Grid>
       </Grid>
@@ -57,7 +62,7 @@ export default function Education() {
           marginLeft: "2%",
         }}>
         <Typography variant="overline" color="black">
-          Current
+          Completed
         </Typography>
 
         <Typography variant="h5" color="black">

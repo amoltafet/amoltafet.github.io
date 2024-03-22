@@ -5,7 +5,7 @@ import CardContent from "@mui/joy/CardContent";
 import CardOverflow from "@mui/joy/CardOverflow";
 import Divider from "@mui/joy/Divider";
 import Typography from "@mui/joy/Typography";
-import Link from "@mui/joy/Link";
+import { HashLink as Link } from 'react-router-hash-link';
 
 export default function MainCard() {
   const data = [
@@ -35,7 +35,7 @@ export default function MainCard() {
     },
   ];
   return (
-    <div>
+    <div style={{flexDirection: "row" }}>
       {data &&
         data.map((item) => (
           <Card
@@ -56,7 +56,7 @@ export default function MainCard() {
           >
             <CardOverflow>
               <AspectRatio ratio="1" sx={{ width: 90 }}>
-                <Link href={item.link} overlay underline="none">
+                <Link smooth to={item.link} overlay underline="none">
                   <img
                     src={item.image + "?auto=format&fit=crop&w=90"}
                     srcSet={`${
@@ -74,7 +74,7 @@ export default function MainCard() {
                 textColor="success.plainColor"
                 mb={0.5}
               >
-                <Link href={item.link} overlay underline="none">
+                <Link smooth to={item.link}    overlay underline="none">
                   {item.title}{" "}
                 </Link>
               </Typography>
@@ -93,7 +93,7 @@ export default function MainCard() {
                 textTransform: "uppercase",
               }}
             >
-              <Link href={item.link} overlay underline="none">
+              <Link smooth to={item.link} overlay underline="none">
                 View{" "}
               </Link>
             </CardOverflow>

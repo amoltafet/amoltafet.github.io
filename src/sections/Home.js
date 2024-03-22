@@ -10,13 +10,14 @@ import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import Socials from "../components/Socials";
 import Button from "@mui/joy/Button";
+import MainCard from "../components/MainCards";
 
 export default function Home() {
 
   const socials = [
     {
         name: "Phone",
-        link: "tel:+1-647-573-6493",
+        link: "tel:+1-509-992-9504",
         icon: <LocalPhoneIcon />,
     },
     {
@@ -27,17 +28,15 @@ export default function Home() {
 ];
 
   return (
-    <div style={{
-        padding: "2%",
-        backgroundColor: "#121212",
-    }}>
-        <Grid container spacing={2}>
-            <Grid xs={3} sx={{
-                backgroundColor: "#212121",
+    <div>
+            <Grid container sx={{
                 display: "flex",
+                marginTop: "-10%",
                 flexDirection: "column",
                 height: "95vh",
                 borderRadius: "10px",
+                justifyContent: "center",
+                alignContent: "center",
                 padding: "1%",
             }}> 
                 <div style={{
@@ -49,7 +48,7 @@ export default function Home() {
                 }}>
                 <Avatar
                         sx={{ width: 150, height: 150, marginRight: "5%" }}
-                        src="https://media.licdn.com/dms/image/D5603AQEY5P_-3hAe5g/profile-displayphoto-shrink_800_800/0/1682223262966?e=1687996800&v=beta&t=-kbYntj8QfHVOeWS16OcHkepGUhzaQ5qGNbUZ99Hf9A"
+                        src="https://amoltafet.github.io/ahmad.jpeg"
                         alt="Ahmad Moltafet"
                     />
                     <Typography variant="h3" color="primary">
@@ -60,8 +59,12 @@ export default function Home() {
                     }}>
                     Software Engineer
                     </Button>
+                    <div style={{ marginTop: "5%" }}/>
+                    <Typography variant="h6" color="primary">
+                        This is my personal website
+                    </Typography>
                     </div>
-                <Divider sx={{ margin: "5%", backgroundColor: "white" }} />
+                <Divider sx={{ margin: "1%", backgroundColor: "white" }} />
                 {socials.map((social) => (
                     <>
                         <div style={{
@@ -90,18 +93,15 @@ export default function Home() {
                 ))}
                 
                 <Socials />
-
-
-            </Grid>
-            <Grid xs={8} sx={{
-                backgroundColor: "#212121",
-                height: "95vh",
-                borderRadius: "10px",
-                padding: "1%",
-                marginLeft: "1%",
-            }}>
-                
-            </Grid>
+                <div style={{
+                    marginLeft: "2%",
+                    marginTop: "5%",
+                }}>
+                    <MainCard /> 
+                </div>
+               
+            
+            
 
         </Grid>
     </div>

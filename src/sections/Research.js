@@ -63,7 +63,7 @@ export default function Research() {
               chatbots and users.
             </Typography>
             <Typography variant="overline" color="black">
-              CURRENTLY IN PROGRESS
+              PENDING PUBLICATION
             </Typography>
           </Grid>
           <Grid item xs={12} sm={6} sx={{ textAlign: "center", marginTop: "1%" }}>
@@ -113,7 +113,7 @@ export default function Research() {
             Research Paper
           </Typography>
         </Button>
-        <Divider sx={{ marginTop: "1%" }} />
+        <div sx={{ marginTop: "5%" }} />
         <Grid container>
           <Grid item xs={12} sm={6}>
             <Typography variant="overline" color="black">
@@ -129,9 +129,7 @@ export default function Research() {
               inform decision-making processes related to healthcare and
               biomedicine.
             </Typography>
-            <Typography variant="overline" color="black">
-              CURRENTLY IN PROGRESS
-            </Typography>
+            
           </Grid>
           <Grid item xs={12} sm={6} sx={{ textAlign: "center" }}>
             <Typography variant="overline" color="black">

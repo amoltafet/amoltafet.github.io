@@ -1,52 +1,68 @@
-import React, { useEffect, useState } from "react";
-import Main from "./sections/Main.js";
-import Custom404 from "./Custom404.js";
-import Work from "./sections/Work.js";
-import Projects from "./sections/Projects.js";
-import Skills from "./sections/Skills.js";
-import Research from "./sections/Research.js";
-import CssBaseline from "@mui/material/CssBaseline";
-import Education from "./sections/Education.js";
-import Home from "./sections/Home.js";
+import { HashLink as Link } from 'react-router-hash-link';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from "./sections/Home";
+import Projects from "./sections/Projects";
+import Skills from "./sections/Skills";
+import Research from "./sections/Research";
+import Education from "./sections/Education";
+import Main from "./sections/Main";
+import { useState } from 'react';
+import { useEffect } from 'react';
+import Work from './sections/Work';
+import { IconButton } from '@mui/material';
 
 function App() {
-  const [componentToShow, setComponentToShow] = useState(<Main />);
+  const [isVisible, setIsVisible] = useState(false);
+
+  // Show button when page is scrolled up to given distance
+  const toggleVisibility = () => {
+    if (window.pageYOffset > 300) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  // Set the top cordinate to 0
+  // make scrolling smooth
+  const scrollToTop = () => {
+    
+  };
 
   useEffect(() => {
-    console.log(window.location.hash);
-    switch (window.location.hash) {
-      case "#work":
-        setComponentToShow(<Work />);
-        break;
-      case "#projects":
-        setComponentToShow(<Projects />);
-        break;
-      case "#skills":
-        setComponentToShow(<Skills />);
-        break;
-      case "#research":
-        setComponentToShow(<Research />);
-        break;
-      case "#education":
-        setComponentToShow(<Education />);
-        break;
-        case "#home":
-          setComponentToShow(<Home />);
-          break;
-      default:
-        setComponentToShow(<Main />);
-    }
-    //  reload the page when the hash changes
-    window.addEventListener("hashchange", () => {
-      window.location.reload();
-    });
-  }, [window.location.hash]);
+    window.addEventListener("scroll", toggleVisibility);
+    return () => window.removeEventListener("scroll", toggleVisibility);
+  }, []);
 
   return (
-    <div>
-      <CssBaseline />
-      {componentToShow}
+    <Router>
+      <div>
+        <Routes>
+          <Route path="/" element={
+            <div style={{
+              margin: "10%",
+            }}>
+              <div id="home"><Home /></div>
+              <div id="projects"><Projects /></div>
+              <div id="skills"><Skills /></div>
+              <div id="research"><Research /></div>
+              <div id="education"><Education /></div>
+              <div id="work"><Work /></div>
+  
+            </div>
+          } />
+        </Routes>
+      </div>
+      <div className="scroll-to-top">
+      {isVisible && 
+        <Link smooth to="/#home">
+          <IconButton>
+          Scroll to top
+          </IconButton>
+        </Link>
+        }
     </div>
+    </Router>
   );
 }
 
