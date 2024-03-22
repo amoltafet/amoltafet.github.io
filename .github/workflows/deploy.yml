@@ -16,10 +16,10 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '14'  # replace with your Node.js version
+        node-version: '24'  
 
     - name: Install Dependencies
-      run: npm ci
+      run: npm install
 
     - name: Build
       run: npm run build
